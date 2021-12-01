@@ -33,9 +33,6 @@ body {
       .seccionRecientes div article div p {
         margin-left: 20px; }
 
-.seccionRecientes__titulo--rojo {
-  color: red; }
-
 .seccionRecientes div article:hover {
   transform: scale(0.95); }
 
