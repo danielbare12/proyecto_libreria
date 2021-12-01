@@ -1,0 +1,179 @@
+@import "variables";
+
+
+body {
+    background-color: $colorPrincipal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color: $colorSecundario;
+}
+
+.logo{
+    width: 130px;
+} 
+
+  
+/*--------------------------------------------*/
+/*Estilos del main*/
+
+
+.carrusel img{
+    filter: brightness(0.5);
+}
+
+/*Estilos de la seccion de recientes del index*/
+
+.seccionRecientes{
+    background-color: $colorSecundario;
+    grid-area: seccionRecientes;
+    div article{
+        margin-top: 10px;
+        box-shadow: 2px 2px 5px black;
+        background-color: $colorProductos;
+        transition: all 1s;
+        display: flex;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.seccionRecientes__titulo--rojo{
+    color:red
+}
+
+
+
+.seccionRecientes div article:hover{
+    transform: scale(0.95);
+}
+
+
+/*Estilos de seccion de productos*/
+
+
+.seccionProductos{
+    margin-top: 30px;
+    background-color: $colorSecundario;
+    div article{
+        background-color: $colorProductos;
+        box-shadow: 2px 2px 5px black;
+        display: grid;
+        justify-items: center;
+        transition: all 1s;
+        margin-bottom: 10px;
+    }
+}
+
+
+.seccionProductos div article:hover{
+    transform: scale(1.05,1.05);
+    
+}
+
+.juegoDeTronos{
+    grid-area: imagen1;
+}
+
+.harryPotter{
+    grid-area: imagen2;
+}
+.agatha{
+    grid-area: imagen3;
+}
+.sherlockHolmes{
+    grid-area: imagen4;
+}
+.juegosDelHambre{
+    grid-area: imagen5;
+}
+.borges{
+    grid-area: imagen6;
+}
+
+
+
+/*Pie de pagina*/
+
+footer{
+    background-color: $colorSecundario;
+}
+
+.icono{
+    width: 50px;
+    height: 50px;
+}
+
+
+/*Estilos de la pagina de productos*/
+
+.mainDeProductos{
+    background-color: $colorSecundario;
+    section{
+        margin-top: 10px;
+        border-top: $colorSecundario 2px groove;   
+        div article{
+            background-color: $colorProductos;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            border: black solid 2px;
+            transition: all 1s;            
+        }    
+    }
+    
+}
+
+
+.mainDeProductos section div article:hover{
+    transform: scale(1.05,1.05);
+}
+
+
+/*Estilos para la pagina de novedades*/
+
+
+.listaNovedades div{
+    background-color: $colorProductos;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+
+/*Estilos para la pagina nosotros*/
+
+.nosotros div{
+    line-height: 2;
+    background-color:$colorProductos;
+}
+
+/*Estilos para la pagina contacto*/
+
+
+
+.formulario input:focus{
+    background-color: lightgray;
+}
+
+.formulario textarea:focus{
+    background-color: lightgray;
+}
+
+@import "mediaQ"
+
+
+
+
+
+
+

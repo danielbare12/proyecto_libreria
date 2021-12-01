@@ -1,0 +1,237 @@
+body {
+  background-color: #ffcc80;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.navbar {
+  background-color: #ca9b52; }
+
+.logo {
+  width: 130px; }
+
+/*--------------------------------------------*/
+/*Estilos del main*/
+.carrusel img {
+  filter: brightness(0.5); }
+
+/*Estilos de la seccion de recientes del index*/
+.seccionRecientes {
+  background-color: #ca9b52;
+  grid-area: seccionRecientes; }
+  .seccionRecientes div article {
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px black;
+    background-color: #ffffb0;
+    transition: all 1s;
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px; }
+    .seccionRecientes div article div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .seccionRecientes div article div p {
+        margin-left: 20px; }
+
+.seccionRecientes__titulo--rojo {
+  color: red; }
+
+.seccionRecientes div article:hover {
+  transform: scale(0.95); }
+
+/*Estilos de seccion de productos*/
+.seccionProductos {
+  margin-top: 30px;
+  background-color: #ca9b52; }
+  .seccionProductos div article {
+    background-color: #ffffb0;
+    box-shadow: 2px 2px 5px black;
+    display: grid;
+    justify-items: center;
+    transition: all 1s;
+    margin-bottom: 10px; }
+
+.seccionProductos div article:hover {
+  transform: scale(1.05, 1.05); }
+
+.juegoDeTronos {
+  grid-area: imagen1; }
+
+.harryPotter {
+  grid-area: imagen2; }
+
+.agatha {
+  grid-area: imagen3; }
+
+.sherlockHolmes {
+  grid-area: imagen4; }
+
+.juegosDelHambre {
+  grid-area: imagen5; }
+
+.borges {
+  grid-area: imagen6; }
+
+/*Pie de pagina*/
+footer {
+  background-color: #ca9b52; }
+
+.icono {
+  width: 50px;
+  height: 50px; }
+
+/*Estilos de la pagina de productos*/
+.mainDeProductos {
+  background-color: #ca9b52; }
+  .mainDeProductos section {
+    margin-top: 10px;
+    border-top: #ca9b52 2px groove; }
+    .mainDeProductos section div article {
+      background-color: #ffffb0;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      border: black solid 2px;
+      transition: all 1s; }
+
+.mainDeProductos section div article:hover {
+  transform: scale(1.05, 1.05); }
+
+/*Estilos para la pagina de novedades*/
+.listaNovedades div {
+  background-color: #ffffb0;
+  box-shadow: 2px 2px 5px black; }
+
+/*Estilos para la pagina nosotros*/
+.nosotros div {
+  line-height: 2;
+  background-color: #ffffb0; }
+
+/*Estilos para la pagina contacto*/
+.formulario input:focus {
+  background-color: lightgray; }
+
+.formulario textarea:focus {
+  background-color: lightgray; }
+
+/*Estilos para la pantalla de un celular*/
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 12px; }
+  /*Aca va el menu desplegable*/
+  .imagen {
+    width: 80px;
+    height: 130px;
+    border: groove 5px black; }
+  /*Estilos seccion de recientes del index*/
+  .seccionRecientes div {
+    justify-items: center; }
+  /*Estilos de seccion de productos del index*/
+  .seccionProductos div {
+    display: grid;
+    grid-template-areas: 'imagen1 imagen2' 'imagen3 imagen4' 'imagen5 imagen6';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+  /*Estilos de la pagina de productos*/
+  .mainDeProductos section {
+    display: grid;
+    grid-template-rows: 75px 1fr; }
+    .mainDeProductos section div {
+      display: flex; }
+  /*Estilos pagina de novedades*/
+  .listaNovedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+  .redes {
+    display: flex;
+    justify-content: space-around; } }
+
+/*Estilos para la pantalla de una tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 15px; }
+  /*Estilos seccion de recientes del index*/
+  .seccionRecientes div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center; }
+  /*Estilos de seccion de productos del index*/
+  .seccionProductos div {
+    display: grid;
+    grid-template-areas: 'imagen1 imagen2 imagen3' 'imagen4 imagen5 imagen6';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center; }
+  .imagen {
+    width: 180px;
+    height: 280px;
+    border: groove 5px black; }
+  /*Pie de pagina*/
+  footer {
+    background-color: #ca9b52;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+    margin-top: 10px; }
+  .mainDeProductos section div {
+    display: flex; }
+  /*Estilos pagina de novedades*/
+  .listaNovedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .listaNovedades div {
+      margin: 5px; }
+  .redes {
+    display: flex;
+    flex-direction: row; } }
+
+/*Estilos para la pantalla de una Desktop*/
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 15px; }
+  /*Estilos seccion de recientes del index*/
+  .seccionRecientes div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center; }
+  /*Estilos de seccion de productos del index*/
+  .seccionProductos div {
+    display: grid;
+    grid-template-areas: 'imagen1 imagen2 imagen3'  'imagen4 imagen5 imagen6';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center; }
+  .imagen {
+    width: 180px;
+    height: 280px;
+    border: groove 5px black; }
+  /*Pie de pagina*/
+  footer {
+    background-color: #ca9b52;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+    margin-top: 10px; }
+  .mainDeProductos section div {
+    display: flex; }
+  /*Estilos pagina de novedades*/
+  .listaNovedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+  .redes {
+    display: flex;
+    flex-direction: row; } }
