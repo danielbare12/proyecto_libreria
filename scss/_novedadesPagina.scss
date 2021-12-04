@@ -1,0 +1,55 @@
+@import "variables";
+
+/*Estilos para la pagina de novedades*/
+
+
+.listaNovedades div{
+    background-color: $colorProductos;
+    box-shadow: 2px 2px 5px black;
+}
+
+/*Estilos para la pantalla de un celular*/
+@media only screen and (max-width:767px){
+
+    /*Estilos pagina de novedades*/
+
+    .listaNovedades{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+}
+
+/*Estilos para la pantalla de una tablet*/
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+
+    /*Estilos pagina de novedades*/
+
+    .listaNovedades{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        div{
+            margin: 5px;
+        }
+    }
+    
+}
+
+/*Estilos para la pantalla de una Desktop*/
+
+@media only screen and (min-width:1024px){
+    
+
+    /*Estilos pagina de novedades*/
+
+    .listaNovedades{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+}

@@ -1,0 +1,11 @@
+@import "variables";
+
+/*Estilos para la pagina contacto*/
+
+.formulario input:focus{
+    background-color: lightgray;
+}
+
+.formulario textarea:focus{
+    background-color: lightgray;
+}
