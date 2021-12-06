@@ -14,6 +14,7 @@
 
 <body>
     <header>
+        <!---------Menu-------------->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img src="../media/logo.png" alt="Aca va el logo"
@@ -38,64 +39,79 @@
     <main>
         <h1>Productos</h1>
         <div class="mainDeProductos">
-            <section class="mainDeProductos__seccionFantasia" id="sFantasia">
-                <h2 class="mainDeProductos__seccionFantasia__titulo">Novelas Fantasticas</h2>
+          <!-----------Categoria Novelas de fantasia------------>  
+            <section id="sFantasia">
+                <h2>Novelas Fantasticas</h2>
                 <div>
-                    <article class="mainDeProductos__seccionFantasia__producto juegoDeTronos">
-                        <p class="mainDeProductos__seccionFantasia__producto__titulo">Juego de Tronos</p>
-                        <img src="../media/juegoTronos.jpg" alt="Aca va una tapa de Juego de Tronos" class="mainDeProductos__seccionFantasia__producto__imagen imagen">
+                    <article class="juegoDeTronos rounded">
+                        <p>Juego de Tronos</p>
+                        <img src="../media/juegoTronos.jpg" alt="Aca va una tapa de Juego de Tronos" class="imagen">
                     </article>
-                    <article class="mainDeProductos__seccionFantasia__producto harryPotter">
-                        <p class="mainDeProductos__seccionFantasia__producto__titulo">Harry Potter</p>
-                        <img src="../media/harryPotter.jpg" alt="Aca va una tapa de Harry Potter" class="mainDeProductos__seccionFantasia__producto__imagen imagen">
+                    <article class="harryPotter rounded">
+                        <p>Harry Potter</p>
+                        <img src="../media/harryPotter.jpg" alt="Aca va una tapa de Harry Potter" class="imagen">
                     </article>
                 </div>
             </section>
-            <section class="mainDeProductos__seccionCienciaFiccion" id="sCFiccion">
-                <h2 class="mainDeProductos__seccionCienciaFiccion__titulo">Ciencia Ficcion</h2>
+            <section id="sCFiccion">
+                <!-----------Categoria Novelas de ciencia ficcion------------>  
+                <h2>Ciencia Ficcion</h2>
                 <div>
-                    <article class="mainDeProductos__seccionCienciaFiccion__producto juegosDelHambre">
-                        <p class="mainDeProductos__seccionCienciaFiccion__producto__titulo">Juegos Del Hambre</p>
+                    <article class="juegosDelHambre rounded">
+                        <p>Juegos Del Hambre</p>
                         <img src="../media/juegosDelHambre.jpg" alt="Aca va una tapa de los Juegos del Hambre"
-                            class="mainDeProductos__seccionCienciaFiccion__producto__imagen imagen">
+                            class="imagen">
                     </article>
                 </div>
             </section>
-            <section class="mainDeProductos__seccionDetectives" id="sDetectives">
-                <h2 class="mainDeProductos__seccionDetectives__titulo">Novelas de Detectives</h2>
+            <section id="sDetectives">
+                <!-----------Categoria Novelas de detectives------------>  
+                <h2>Novelas de Detectives</h2>
                 <div>
-                    <article class="mainDeProductos__seccionDetectives__producto agatha">
-                        <p class="mainDeProductos__seccionDetectives__producto__titulo">Agatha Christie</p>
+                    <article class="agatha rounded">
+                        <p>Agatha Christie</p>
                         <img src="../media/agathaTapa.jpg" alt="Aca va la tapa de un libro de Agatha Christie"
-                            class="mainDeProductos__seccionDetectives__producto__imagen imagen">
+                            class="imagen">
                     </article>
-                    <article class="mainDeProductos__seccionDetectives__producto sherlockHolmes">
-                        <p class="mainDeProductos__seccionDetectives__producto__titulo">Sherlock Holmes</p>
-                        <img src="../media/sherlockTapa.jpg" alt="Aca va una tapa de Sherlock Holmes" class="mainDeProductos__seccionDetectives__producto__imagen imagen">
+                    <article class="sherlockHolmes rounded">
+                        <p>Sherlock Holmes</p>
+                        <img src="../media/sherlockTapa.jpg" alt="Aca va una tapa de Sherlock Holmes" class="imagen">
                     </article>
                 </div>
             </section>
-            <section class="mainDeProductos__seccionBiografias" id="sBiografias">
-                <h2 class="mainDeProductos__seccionBiografias__titulo">Biografias</h2>
+            <section id="sBiografias">
+                <!-----------Categoria Biografias------------>  
+                <h2>Biografias</h2>
                 <div>
-                    <article class="mainDeProductos__seccionBiografias__producto borges">
-                        <p class="mainDeProductos__seccionBiografias__producto__titulo">Borges</p>
-                        <img src="../media/borgesTapa.jpg" alt="Aca va la tapa de un libro de Borges" class="mainDeProductos__seccionBiografias__producto__imagen imagen">
+                    <article class="borges rounded">
+                        <p>Borges</p>
+                        <img src="../media/borgesTapa.jpg" alt="Aca va la tapa de un libro de Borges" class="imagen">
                     </article>
                 </div>
             </section>
         </div>
 
     </main>
+    <!--Pie de pagina--->
     <footer class="pieDePagina">
-        <div class="pieDePagina__propiedad">
-            <p class="piedeDePagina__propiedad__autor" id="autor">Autor: Daniel Bareiro</p>
-            <p class="piedeDePagina__propiedad__copyright">Copyright</p>
-        </div>
-        <div class="pieDePagina__iconos">
-            <a href="https://www.facebook.com/"><img src="../media/whatsappIcon.png" alt="Aqui va el icono de whatsapp" class="icono"></a>
+
+        <!--Redes sociales--->
+        <div>
+            <a href=""><img src="../media/whatsappIcon.png" alt="Aqui va el icono de whatsapp" class="icono"></a>
             <a href=""><img src="../media/instagramIcon.png" alt="Aqui va el icono de instagram" class="icono"></a>
             <a href=""><img src="../media/facebookIcon.png" alt="Aqui va el icono de facebook" class="icono"></a>
+            <a href=" mailto:danielbarei@hotmail.com "><img src="../media/mailIcon.png"
+                    alt="Aqui va el icono de un sobre" class="icono"></a>
+        </div>
+        <!----------------------Mapa de Navegacion------------------->
+        <div class="mapaDeNavegacion">
+            <div><a href="../secciones/productos.html">Productos</a></div>
+            <div><a href="../secciones/novedades.html">Novedades</a></div>
+            <div><a href="../secciones/nosotros.html">Nosotros</a></div>
+            <div><a href="../secciones/contacto.html">Contacto</a></div>
+        </div>
+        <div>
+            <p>© Diseñado por Daniel Bareiro</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
