@@ -1,0 +1,89 @@
+@import "variables";
+
+/*Estilos de la seccion de recientes del index*/
+
+.seccionRecientes{
+    background-color: $colorSecundario;
+    grid-area: seccionRecientes;
+    div article{
+        margin-top: 10px;
+        box-shadow: 2px 2px 5px black;
+        background-color: $colorProductos;
+        transition: all 1s;
+        display: flex;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
+.seccionRecientes div article:hover{
+    transform: scale(0.95);
+}
+
+/*Estilos para la pantalla de un celular*/
+@media only screen and (max-width:767px){
+
+    .imagen{
+        width: 80px;
+        height: 130px;
+    }
+
+    /*Estilos seccion de recientes del index*/
+    .seccionRecientes div{
+        
+        justify-items: center;
+    }
+
+
+}
+
+/*Estilos para la pantalla de una tablet*/
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+
+    /*Estilos seccion de recientes del index*/
+
+    .seccionRecientes div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+
+    .imagen{
+        width: 180px;
+        height: 280px;
+    }
+    
+}
+
+/*Estilos para la pantalla de una Desktop*/
+
+@media only screen and (min-width:1024px){
+
+    /*Estilos seccion de recientes del index*/
+    .seccionRecientes div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+
+    .imagen{
+        width: 180px;
+        height: 280px;
+    }
+
+}

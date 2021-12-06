@@ -1,9 +1,9 @@
 body {
-  background-color: #ffcc80;
+  background-color: #e1f5fe;
   font-family: Arial, Helvetica, sans-serif; }
 
 .navbar {
-  background-color: #ca9b52; }
+  background-color: #afc2cb; }
 
 .logo {
   width: 130px; }
@@ -13,14 +13,60 @@ body {
 .carrusel img {
   filter: brightness(0.5); }
 
+/*Estilos para la pantalla de un celular*/
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 12px; }
+  /*Aca va el menu desplegable*/
+  .imagen {
+    width: 80px;
+    height: 130px; } }
+
+/*Estilos para la pantalla de una tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 15px; }
+  .imagen {
+    width: 180px;
+    height: 280px; } }
+
+/*Estilos para la pantalla de una Desktop*/
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 15px; }
+  .imagen {
+    width: 180px;
+    height: 280px; }
+  main {
+    margin-left: 100px;
+    margin-right: 100px; } }
+
+/*Pie de pagina*/
+footer {
+  background-color: #afc2cb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; }
+  footer div {
+    margin-top: 10px; }
+
+.icono {
+  width: 50px;
+  height: 50px; }
+
+.mapaDeNavegacion a {
+  color: black;
+  text-decoration: none; }
+
 /*Estilos de la seccion de recientes del index*/
 .seccionRecientes {
-  background-color: #ca9b52;
+  background-color: #afc2cb;
   grid-area: seccionRecientes; }
   .seccionRecientes div article {
     margin-top: 10px;
     box-shadow: 2px 2px 5px black;
-    background-color: #ffffb0;
+    background-color: #ffffff;
     transition: all 1s;
     display: flex;
     margin-bottom: 15px;
@@ -33,18 +79,50 @@ body {
       .seccionRecientes div article div p {
         margin-left: 20px; }
 
-.seccionRecientes__titulo--rojo {
-  color: red; }
-
 .seccionRecientes div article:hover {
   transform: scale(0.95); }
 
-/*Estilos de seccion de productos*/
+/*Estilos para la pantalla de un celular*/
+@media only screen and (max-width: 767px) {
+  .imagen {
+    width: 80px;
+    height: 130px; }
+  /*Estilos seccion de recientes del index*/
+  .seccionRecientes div {
+    justify-items: center; } }
+
+/*Estilos para la pantalla de una tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /*Estilos seccion de recientes del index*/
+  .seccionRecientes div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center; }
+  .imagen {
+    width: 180px;
+    height: 280px; } }
+
+/*Estilos para la pantalla de una Desktop*/
+@media only screen and (min-width: 1024px) {
+  /*Estilos seccion de recientes del index*/
+  .seccionRecientes div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center; }
+  .imagen {
+    width: 180px;
+    height: 280px; } }
+
+/*Estilos de seccion de productos del index*/
 .seccionProductos {
   margin-top: 30px;
-  background-color: #ca9b52; }
+  background-color: #afc2cb; }
   .seccionProductos div article {
-    background-color: #ffffb0;
+    background-color: #ffffff;
     box-shadow: 2px 2px 5px black;
     display: grid;
     justify-items: center;
@@ -72,60 +150,11 @@ body {
 .borges {
   grid-area: imagen6; }
 
-/*Pie de pagina*/
-footer {
-  background-color: #ca9b52; }
-
-.icono {
-  width: 50px;
-  height: 50px; }
-
-/*Estilos de la pagina de productos*/
-.mainDeProductos {
-  background-color: #ca9b52; }
-  .mainDeProductos section {
-    margin-top: 10px;
-    border-top: #ca9b52 2px groove; }
-    .mainDeProductos section div article {
-      background-color: #ffffb0;
-      margin-right: 20px;
-      margin-left: 20px;
-      margin-bottom: 10px;
-      border: black solid 2px;
-      transition: all 1s; }
-
-.mainDeProductos section div article:hover {
-  transform: scale(1.05, 1.05); }
-
-/*Estilos para la pagina de novedades*/
-.listaNovedades div {
-  background-color: #ffffb0;
-  box-shadow: 2px 2px 5px black; }
-
-/*Estilos para la pagina nosotros*/
-.nosotros div {
-  line-height: 2;
-  background-color: #ffffb0; }
-
-/*Estilos para la pagina contacto*/
-.formulario input:focus {
-  background-color: lightgray; }
-
-.formulario textarea:focus {
-  background-color: lightgray; }
-
-/*Estilos para la pantalla de un celular*/
+/*Estilos para pantalla de celular*/
 @media only screen and (max-width: 767px) {
-  body {
-    font-size: 12px; }
-  /*Aca va el menu desplegable*/
   .imagen {
     width: 80px;
-    height: 130px;
-    border: groove 5px black; }
-  /*Estilos seccion de recientes del index*/
-  .seccionRecientes div {
-    justify-items: center; }
+    height: 130px; }
   /*Estilos de seccion de productos del index*/
   .seccionProductos div {
     display: grid;
@@ -133,34 +162,10 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap: 10px;
-    grid-row-gap: 10px; }
-  /*Estilos de la pagina de productos*/
-  .mainDeProductos section {
-    display: grid;
-    grid-template-rows: 75px 1fr; }
-    .mainDeProductos section div {
-      display: flex; }
-  /*Estilos pagina de novedades*/
-  .listaNovedades {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; }
-  .redes {
-    display: flex;
-    justify-content: space-around; } }
+    grid-row-gap: 10px; } }
 
 /*Estilos para la pantalla de una tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    font-size: 15px; }
-  /*Estilos seccion de recientes del index*/
-  .seccionRecientes div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-items: center; }
   /*Estilos de seccion de productos del index*/
   .seccionProductos div {
     display: grid;
@@ -172,38 +177,10 @@ footer {
     justify-items: center; }
   .imagen {
     width: 180px;
-    height: 280px;
-    border: groove 5px black; }
-  /*Pie de pagina*/
-  footer {
-    background-color: #ca9b52;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: space-evenly;
-    margin-top: 10px; }
-  .mainDeProductos section div {
-    display: flex; }
-  /*Estilos pagina de novedades*/
-  .listaNovedades {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
-    .listaNovedades div {
-      margin: 5px; }
-  .redes {
-    display: flex;
-    flex-direction: row; } }
+    height: 280px; } }
 
 /*Estilos para la pantalla de una Desktop*/
 @media only screen and (min-width: 1024px) {
-  body {
-    font-size: 15px; }
-  /*Estilos seccion de recientes del index*/
-  .seccionRecientes div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-items: center; }
   /*Estilos de seccion de productos del index*/
   .seccionProductos div {
     display: grid;
@@ -215,23 +192,94 @@ footer {
     justify-items: center; }
   .imagen {
     width: 180px;
-    height: 280px;
-    border: groove 5px black; }
-  /*Pie de pagina*/
-  footer {
-    background-color: #ca9b52;
+    height: 280px; } }
+
+/*Estilos de la pagina de productos*/
+.mainDeProductos {
+  background-color: #afc2cb; }
+  .mainDeProductos section {
+    margin-top: 10px;
+    border-top: #afc2cb 2px groove; }
+    .mainDeProductos section div article {
+      background-color: #ffffff;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      box-shadow: 2px 2px 5px black;
+      transition: all 1s; }
+
+.mainDeProductos section div article:hover {
+  transform: scale(1.05, 1.05); }
+
+/*Estilos para la pantalla de un celular*/
+@media only screen and (max-width: 767px) {
+  /*Estilos de la pagina de productos*/
+  .mainDeProductos section {
     display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: space-evenly;
-    margin-top: 10px; }
+    grid-template-rows: 75px 1fr; }
+    .mainDeProductos section div {
+      display: flex; } }
+
+/*Estilos para la pantalla de una tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .mainDeProductos section div {
-    display: flex; }
+    display: flex; } }
+
+/*Estilos para la pantalla de una Desktop*/
+@media only screen and (min-width: 1024px) {
+  .mainDeProductos section div {
+    display: flex; } }
+
+/*Estilos para la pagina de novedades*/
+.listaNovedades div {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px black; }
+
+/*Estilos para la pantalla de un celular*/
+@media only screen and (max-width: 767px) {
+  /*Estilos pagina de novedades*/
+  .listaNovedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; } }
+
+/*Estilos para la pantalla de una tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /*Estilos pagina de novedades*/
+  .listaNovedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .listaNovedades div {
+      margin: 5px; } }
+
+/*Estilos para la pantalla de una Desktop*/
+@media only screen and (min-width: 1024px) {
   /*Estilos pagina de novedades*/
   .listaNovedades {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 10px;
-    grid-row-gap: 10px; }
-  .redes {
-    display: flex;
-    flex-direction: row; } }
+    grid-row-gap: 10px; } }
+
+/*Estilos para la pagina nosotros*/
+.nosotros .row {
+  line-height: 2;
+  background-color: #ffffff;
+  margin-bottom: 25px; }
+
+.nosotros p {
+  font-size: 2.25vw; }
+
+.nosotros ul li {
+  font-size: 2.25vw; }
+
+.nosotros img {
+  width: 66%; }
+
+/*Estilos para la pagina contacto*/
+.formulario input:focus {
+  background-color: lightgray; }
+
+.formulario textarea:focus {
+  background-color: lightgray; }

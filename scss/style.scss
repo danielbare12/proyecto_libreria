@@ -1,0 +1,92 @@
+@import "variables";
+
+
+
+body {
+    background-color: $colorPrincipal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color: $colorSecundario;
+}
+
+.logo{
+    width: 130px;
+} 
+
+  
+/*--------------------------------------------*/
+/*Estilos del main*/
+
+
+.carrusel img{
+    filter: brightness(0.5);
+}
+
+/*Estilos para la pantalla de un celular*/
+@media only screen and (max-width:767px){
+
+    body {
+        font-size: 12px;
+    }
+    
+    /*Aca va el menu desplegable*/
+
+    .imagen{
+        width: 80px;
+        height: 130px;
+    }
+
+
+}
+
+/*Estilos para la pantalla de una tablet*/
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+
+    body {
+        font-size: 15px;
+    }
+
+
+    .imagen{
+        width: 180px;
+        height: 280px;
+    }
+    
+}
+
+/*Estilos para la pantalla de una Desktop*/
+
+@media only screen and (min-width:1024px){
+    body {
+        
+        font-size: 15px;
+    }
+
+    .imagen{
+        width: 180px;
+        height: 280px;
+    }
+
+    main{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}
+
+@import "footerEstilos";
+
+@import "novedadesIndex";
+
+@import "productosIndex";
+
+@import "productosPagina";
+
+@import "novedadesPagina";
+
+@import "nosotrosPagina";
+
+@import "contactoPagina";

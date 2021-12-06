@@ -1,0 +1,21 @@
+@import "variables";
+
+/*Estilos para la pagina nosotros*/
+
+.nosotros .row{
+    line-height: 2;
+    background-color: $colorProductos;
+    margin-bottom: 25px;
+}
+
+.nosotros p{
+    font-size: 2.25vw;
+}
+
+.nosotros ul li{
+    font-size: 2.25vw;
+}
+
+.nosotros img{
+    width: 66%;
+}
