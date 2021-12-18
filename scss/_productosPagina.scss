@@ -13,7 +13,7 @@
             margin-left: 20px;
             margin-bottom: 10px;
             box-shadow: 2px 2px 5px black;
-            transition: all 1s;            
+            transition: all 1s;          
         }    
     }
     
@@ -24,40 +24,62 @@
     transform: scale(1.05,1.05);
 }
 
-@import "variables";
 
 /*Estilos para la pantalla de un celular*/
 @media only screen and (max-width:767px){
 
     /*Estilos de la pagina de productos*/
 
-    .mainDeProductos section{
-        display: grid;
-        grid-template-rows: 75px 1fr;
-        div{
-            display: flex;        
-        }
-    }
+    .mainDeProductos section div{
+            
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-content: center;
 
+             
+        }
+        .imagenProducto{
+            width: 100%;
+        }
 
 }
 
 /*Estilos para la pantalla de una tablet*/
 
 @media only screen and (min-width:768px) and (max-width:1023px){
-
     .mainDeProductos section div{
-        display: flex;        
+            
+        display: flex;
+        flex-direction: row;
+
+        article{
+            width: 15%;
+        }
+         
     }
-    
+
+    .imagenProducto{
+        width: 100%;
+    }
 }
 
 /*Estilos para la pantalla de una Desktop*/
 
 @media only screen and (min-width:1024px){
-
     .mainDeProductos section div{
-        display: flex;        
+            
+        display: flex;
+        flex-direction: row;
+        
+
+        article{
+            width: 15%;
+        }
+         
+    }
+
+    .imagenProducto{
+        width: 100%;
     }
 
 }

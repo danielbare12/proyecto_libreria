@@ -9,3 +9,13 @@
 .formulario textarea:focus{
     background-color: lightgray;
 }
+
+@media only screen and (max-width:767px){
+
+    .mainContacto{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+}

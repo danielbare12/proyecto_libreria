@@ -20,7 +20,9 @@ body {
   /*Aca va el menu desplegable*/
   .imagen {
     width: 80px;
-    height: 130px; } }
+    height: 130px; }
+  main {
+    margin: 2%; } }
 
 /*Estilos para la pantalla de una tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -28,7 +30,10 @@ body {
     font-size: 15px; }
   .imagen {
     width: 180px;
-    height: 280px; } }
+    height: 280px; }
+  main {
+    margin-left: 10px;
+    margin-right: 10px; } }
 
 /*Estilos para la pantalla de una Desktop*/
 @media only screen and (min-width: 1024px) {
@@ -38,8 +43,8 @@ body {
     width: 180px;
     height: 280px; }
   main {
-    margin-left: 100px;
-    margin-right: 100px; } }
+    margin-left: 50px;
+    margin-right: 50px; } }
 
 /*Pie de pagina*/
 footer {
@@ -214,53 +219,69 @@ footer {
 /*Estilos para la pantalla de un celular*/
 @media only screen and (max-width: 767px) {
   /*Estilos de la pagina de productos*/
-  .mainDeProductos section {
+  .mainDeProductos section div {
     display: grid;
-    grid-template-rows: 75px 1fr; }
-    .mainDeProductos section div {
-      display: flex; } }
+    grid-template-columns: 50% 50%;
+    justify-content: center; }
+  .imagenProducto {
+    width: 100%; } }
 
 /*Estilos para la pantalla de una tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .mainDeProductos section div {
-    display: flex; } }
+    display: flex;
+    flex-direction: row; }
+    .mainDeProductos section div article {
+      width: 15%; }
+  .imagenProducto {
+    width: 100%; } }
 
 /*Estilos para la pantalla de una Desktop*/
 @media only screen and (min-width: 1024px) {
   .mainDeProductos section div {
-    display: flex; } }
+    display: flex;
+    flex-direction: row; }
+    .mainDeProductos section div article {
+      width: 15%; }
+  .imagenProducto {
+    width: 100%; } }
 
 /*Estilos para la pagina de novedades*/
 .listaNovedades div {
   background-color: #ffffff;
-  box-shadow: 2px 2px 5px black; }
+  /*box-shadow: 2px 2px 5px black;*/
+  width: 100%; }
 
 /*Estilos para la pantalla de un celular*/
 @media only screen and (max-width: 767px) {
   /*Estilos pagina de novedades*/
   .listaNovedades {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60%;
     grid-column-gap: 10px;
-    grid-row-gap: 10px; } }
+    grid-row-gap: 10px;
+    justify-content: center; } }
 
 /*Estilos para la pantalla de una tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   /*Estilos pagina de novedades*/
   .listaNovedades {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
-    .listaNovedades div {
-      margin: 5px; } }
+    grid-template-columns: 35% 35%;
+    grid-column-gap: 5%;
+    grid-row-gap: 10px;
+    justify-content: center; } }
 
 /*Estilos para la pantalla de una Desktop*/
 @media only screen and (min-width: 1024px) {
   /*Estilos pagina de novedades*/
   .listaNovedades {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; } }
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 5%;
+    grid-row-gap: 10px; }
+  .imagenNovedades {
+    width: 100%; } }
 
 /*Estilos para la pagina nosotros*/
 .nosotros .row {
@@ -268,14 +289,20 @@ footer {
   background-color: #ffffff;
   margin-bottom: 25px; }
 
-.nosotros p {
-  font-size: 2.25vw; }
-
-.nosotros ul li {
-  font-size: 2.25vw; }
-
 .nosotros img {
-  width: 66%; }
+  width: 100%; }
+
+@media only screen and (max-width: 767px) {
+  .nosotros p {
+    font-size: 2.5vw; }
+  .nosotros ul li {
+    font-size: 2.5vw; } }
+
+@media only screen and (min-width: 767px) {
+  .nosotros p {
+    font-size: 2.25vw; }
+  .nosotros ul li {
+    font-size: 2.25vw; } }
 
 /*Estilos para la pagina contacto*/
 .formulario input:focus {
@@ -283,3 +310,8 @@ footer {
 
 .formulario textarea:focus {
   background-color: lightgray; }
+
+@media only screen and (max-width: 767px) {
+  .mainContacto {
+    margin-left: 15px;
+    margin-right: 15px; } }

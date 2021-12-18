@@ -8,14 +8,28 @@
     margin-bottom: 25px;
 }
 
-.nosotros p{
-    font-size: 2.25vw;
-}
 
-.nosotros ul li{
-    font-size: 2.25vw;
-}
 
 .nosotros img{
-    width: 66%;
+    width: 100%;
+}
+
+@media only screen and (max-width:767px){
+    .nosotros p{
+        font-size: 2.5vw;
+    }
+    
+    .nosotros ul li{
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (min-width:767px){
+    .nosotros p{
+        font-size: 2.25vw;
+    }
+    
+    .nosotros ul li{
+        font-size: 2.25vw;
+    }
 }
