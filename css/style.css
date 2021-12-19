@@ -1,9 +1,10 @@
 body {
-  background-color: #e1f5fe;
+  background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif; }
 
 .navbar {
-  background-color: #afc2cb; }
+  background-color: #afc2cb;
+  box-shadow: 0px 5px 5px -5px black; }
 
 .logo {
   width: 130px; }
@@ -32,6 +33,7 @@ body {
     width: 180px;
     height: 280px; }
   main {
+    margin-top: 1%;
     margin-left: 10px;
     margin-right: 10px; } }
 
@@ -43,6 +45,7 @@ body {
     width: 180px;
     height: 280px; }
   main {
+    margin-top: 1%;
     margin-left: 50px;
     margin-right: 50px; } }
 
@@ -52,7 +55,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px; }
+  margin-top: 10px;
+  box-shadow: 0px 5px 5px 5px black; }
   footer div {
     margin-top: 10px; }
 
@@ -66,12 +70,11 @@ footer {
 
 /*Estilos de la seccion de recientes del index*/
 .seccionRecientes {
-  background-color: #afc2cb;
   grid-area: seccionRecientes; }
   .seccionRecientes div article {
     margin-top: 10px;
     box-shadow: 2px 2px 5px black;
-    background-color: #ffffff;
+    background-color: #e1f5fe;
     transition: all 1s;
     display: flex;
     margin-bottom: 15px;
@@ -85,7 +88,7 @@ footer {
         margin-left: 20px; }
 
 .seccionRecientes div article:hover {
-  transform: scale(0.95); }
+  transform: scale(0.98); }
 
 /*Estilos para la pantalla de un celular*/
 @media only screen and (max-width: 767px) {
@@ -124,18 +127,24 @@ footer {
 
 /*Estilos de seccion de productos del index*/
 .seccionProductos {
-  margin-top: 30px;
-  background-color: #afc2cb; }
-  .seccionProductos div article {
-    background-color: #ffffff;
-    box-shadow: 2px 2px 5px black;
-    display: grid;
-    justify-items: center;
-    transition: all 1s;
-    margin-bottom: 10px; }
+  margin-top: 30px; }
+  .seccionProductos div {
+    border-top: #afc2cb 2px groove;
+    padding-top: 1%; }
+    .seccionProductos div article {
+      display: grid;
+      justify-items: center;
+      transition: all 1s;
+      margin-bottom: 10px; }
+      .seccionProductos div article p {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 5%; }
+      .seccionProductos div article .imagen {
+        box-shadow: 2px 2px 5px black; }
 
 .seccionProductos div article:hover {
-  transform: scale(1.05, 1.05); }
+  transform: scale(0.97, 0.97); }
 
 .juegoDeTronos {
   grid-area: imagen1; }
@@ -167,7 +176,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap: 10px;
-    grid-row-gap: 10px; } }
+    grid-row-gap: 10px;
+    justify-items: center; } }
 
 /*Estilos para la pantalla de una tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -200,24 +210,22 @@ footer {
     height: 280px; } }
 
 /*Estilos de la pagina de productos*/
-.mainDeProductos {
-  background-color: #afc2cb; }
-  .mainDeProductos section {
-    margin-top: 10px;
-    border-top: #afc2cb 2px groove; }
-    .mainDeProductos section div article {
-      background-color: #ffffff;
-      margin-right: 20px;
-      margin-left: 20px;
-      margin-bottom: 10px;
-      box-shadow: 2px 2px 5px black;
-      transition: all 1s; }
+.mainDeProductos section {
+  margin-top: 10px;
+  border-top: #afc2cb 2px groove; }
+  .mainDeProductos section div article {
+    background-color: #e1f5fe;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
+    transition: all 1s; }
 
 .mainDeProductos section div article:hover {
   transform: scale(1.05, 1.05); }
 
 /*Estilos para la pantalla de un celular*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 759px) {
   /*Estilos de la pagina de productos*/
   .mainDeProductos section div {
     display: grid;
@@ -227,7 +235,7 @@ footer {
     width: 100%; } }
 
 /*Estilos para la pantalla de una tablet*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 760px) and (max-width: 1023px) {
   .mainDeProductos section div {
     display: flex;
     flex-direction: row; }
@@ -248,12 +256,12 @@ footer {
 
 /*Estilos para la pagina de novedades*/
 .listaNovedades div {
-  background-color: #ffffff;
+  background-color: #e1f5fe;
   /*box-shadow: 2px 2px 5px black;*/
   width: 100%; }
 
 /*Estilos para la pantalla de un celular*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 759px) {
   /*Estilos pagina de novedades*/
   .listaNovedades {
     display: grid;
@@ -263,7 +271,7 @@ footer {
     justify-content: center; } }
 
 /*Estilos para la pantalla de una tablet*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 760px) and (max-width: 1023px) {
   /*Estilos pagina de novedades*/
   .listaNovedades {
     display: grid;
@@ -286,11 +294,22 @@ footer {
 /*Estilos para la pagina nosotros*/
 .nosotros .row {
   line-height: 2;
-  background-color: #ffffff;
   margin-bottom: 25px; }
+
+.nosotros ul {
+  list-style-image: url("../media/marcador-de-posicion.png"); }
 
 .nosotros img {
   width: 100%; }
+
+.bloqueTexto {
+  background-color: #e1f5fe;
+  padding-bottom: 0%;
+  box-shadow: 2px 2px 5px black;
+  margin: 1%; }
+
+.bloqueImagen {
+  padding: 0%; }
 
 @media only screen and (max-width: 767px) {
   .nosotros p {
@@ -298,7 +317,9 @@ footer {
   .nosotros ul li {
     font-size: 2.5vw; } }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
+  .nosotros {
+    margin-top: 5%; }
   .nosotros p {
     font-size: 2.25vw; }
   .nosotros ul li {
@@ -310,6 +331,11 @@ footer {
 
 .formulario textarea:focus {
   background-color: lightgray; }
+
+.mainContacto .btn {
+  background-color: #e1f5fe;
+  border: #ffffff;
+  color: black; }
 
 @media only screen and (max-width: 767px) {
   .mainContacto {

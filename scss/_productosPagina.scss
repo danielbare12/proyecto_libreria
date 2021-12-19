@@ -3,7 +3,6 @@
 /*Estilos de la pagina de productos*/
 
 .mainDeProductos{
-    background-color: $colorSecundario;
     section{
         margin-top: 10px;
         border-top: $colorSecundario 2px groove;   
@@ -26,7 +25,7 @@
 
 
 /*Estilos para la pantalla de un celular*/
-@media only screen and (max-width:767px){
+@media only screen and (max-width:759px){
 
     /*Estilos de la pagina de productos*/
 
@@ -46,7 +45,7 @@
 
 /*Estilos para la pantalla de una tablet*/
 
-@media only screen and (min-width:768px) and (max-width:1023px){
+@media only screen and (min-width:760px) and (max-width:1023px){
     .mainDeProductos section div{
             
         display: flex;

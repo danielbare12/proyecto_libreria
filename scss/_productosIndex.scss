@@ -5,20 +5,29 @@
 
 .seccionProductos{
     margin-top: 30px;
-    background-color: $colorSecundario;
-    div article{
-        background-color: $colorProductos;
-        box-shadow: 2px 2px 5px black;
+    div {
+        border-top: $colorSecundario 2px groove; 
+        padding-top: 1%;
+        article{
+            p{
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 5%;
+            }
+            .imagen{
+                box-shadow: 2px 2px 5px black;
+            }
         display: grid;
         justify-items: center;
         transition: all 1s;
         margin-bottom: 10px;
+        }
     }
 }
 
 
 .seccionProductos div article:hover{
-    transform: scale(1.05,1.05);
+    transform: scale(0.97,0.97);
     
 }
 
@@ -63,6 +72,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
+        justify-items: center;
     
     }
 

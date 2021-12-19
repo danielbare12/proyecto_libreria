@@ -4,14 +4,31 @@
 
 .nosotros .row{
     line-height: 2;
-    background-color: $colorProductos;
+    
     margin-bottom: 25px;
+}
+
+.nosotros ul{
+    list-style-image: url("../media/marcador-de-posicion.png");
 }
 
 
 
 .nosotros img{
     width: 100%;
+    
+}
+
+.bloqueTexto{
+    background-color: $colorProductos;
+    padding-bottom: 0%;
+    box-shadow: 2px 2px 5px black;
+    margin: 1%;
+}
+
+.bloqueImagen{
+    padding: 0%;
+    
 }
 
 @media only screen and (max-width:767px){
@@ -24,11 +41,16 @@
     }
 }
 
-@media only screen and (min-width:767px){
+@media only screen and (min-width:768px){
+
+    .nosotros{
+        margin-top: 5%;
+    }
+
     .nosotros p{
         font-size: 2.25vw;
     }
-    
+
     .nosotros ul li{
         font-size: 2.25vw;
     }

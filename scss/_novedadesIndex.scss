@@ -3,7 +3,6 @@
 /*Estilos de la seccion de recientes del index*/
 
 .seccionRecientes{
-    background-color: $colorSecundario;
     grid-area: seccionRecientes;
     div article{
         margin-top: 10px;
@@ -27,7 +26,7 @@
 
 
 .seccionRecientes div article:hover{
-    transform: scale(0.95);
+    transform: scale(0.98);
 }
 
 /*Estilos para la pantalla de un celular*/
