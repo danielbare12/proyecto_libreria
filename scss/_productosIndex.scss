@@ -31,6 +31,11 @@
     
 }
 
+.seccionProductos div article:active{
+    transform: scale(0.97,0.97);
+    
+}
+
 .juegoDeTronos{
     grid-area: imagen1;
 }

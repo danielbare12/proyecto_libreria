@@ -29,6 +29,10 @@
     transform: scale(0.98);
 }
 
+.seccionRecientes div article:active{
+    transform: scale(0.96);
+}
+
 /*Estilos para la pantalla de un celular*/
 @media only screen and (max-width:767px){
 

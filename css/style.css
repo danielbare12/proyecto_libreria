@@ -90,6 +90,9 @@ footer {
 .seccionRecientes div article:hover {
   transform: scale(0.98); }
 
+.seccionRecientes div article:active {
+  transform: scale(0.96); }
+
 /*Estilos para la pantalla de un celular*/
 @media only screen and (max-width: 767px) {
   .imagen {
@@ -144,6 +147,9 @@ footer {
         box-shadow: 2px 2px 5px black; }
 
 .seccionProductos div article:hover {
+  transform: scale(0.97, 0.97); }
+
+.seccionProductos div article:active {
   transform: scale(0.97, 0.97); }
 
 .juegoDeTronos {
