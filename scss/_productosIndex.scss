@@ -5,36 +5,39 @@
 
 .seccionProductos{
     margin-top: 30px;
+    h2{
+        margin-top: 1%;
+        text-align: center;
+    }
     div {
         border-top: $colorSecundario 2px groove; 
         padding-top: 1%;
         article{
-            p{
-                text-transform: uppercase;
-                text-align: center;
-                margin-top: 5%;
-            }
-            .imagen{
-                box-shadow: 2px 2px 5px black;
-            }
+            
+        cursor: pointer;
         display: grid;
         justify-items: center;
-        transition: all 1s;
+        transition: all 0.4s;
         margin-bottom: 10px;
+        p{
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 5%;
+        }
+        .imagen{
+            box-shadow: 2px 2px 5px black;
+        }
         }
     }
 }
 
 
 .seccionProductos div article:hover{
-    transform: scale(0.97,0.97);
+    transform: scale(0.98);
     
 }
 
-.seccionProductos div article:active{
-    transform: scale(0.97,0.97);
-    
-}
+
 
 .juegoDeTronos{
     grid-area: imagen1;

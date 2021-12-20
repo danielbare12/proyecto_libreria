@@ -71,21 +71,28 @@ footer {
 /*Estilos de la seccion de recientes del index*/
 .seccionRecientes {
   grid-area: seccionRecientes; }
+  .seccionRecientes h2 {
+    margin-top: 1%;
+    text-align: center; }
   .seccionRecientes div article {
     margin-top: 10px;
     box-shadow: 2px 2px 5px black;
     background-color: #e1f5fe;
-    transition: all 1s;
+    transition: all 0.5s;
     display: flex;
     margin-bottom: 15px;
     margin-left: 15px;
-    margin-right: 15px; }
+    margin-right: 15px;
+    cursor: pointer; }
     .seccionRecientes div article div {
       display: flex;
       flex-direction: column;
       justify-content: center; }
       .seccionRecientes div article div p {
         margin-left: 20px; }
+
+.seccionRecientes__contenido {
+  border-top: #afc2cb 2px groove; }
 
 .seccionRecientes div article:hover {
   transform: scale(0.98); }
@@ -131,13 +138,17 @@ footer {
 /*Estilos de seccion de productos del index*/
 .seccionProductos {
   margin-top: 30px; }
+  .seccionProductos h2 {
+    margin-top: 1%;
+    text-align: center; }
   .seccionProductos div {
     border-top: #afc2cb 2px groove;
     padding-top: 1%; }
     .seccionProductos div article {
+      cursor: pointer;
       display: grid;
       justify-items: center;
-      transition: all 1s;
+      transition: all 0.4s;
       margin-bottom: 10px; }
       .seccionProductos div article p {
         text-transform: uppercase;
@@ -147,10 +158,7 @@ footer {
         box-shadow: 2px 2px 5px black; }
 
 .seccionProductos div article:hover {
-  transform: scale(0.97, 0.97); }
-
-.seccionProductos div article:active {
-  transform: scale(0.97, 0.97); }
+  transform: scale(0.98); }
 
 .juegoDeTronos {
   grid-area: imagen1; }
@@ -216,19 +224,32 @@ footer {
     height: 280px; } }
 
 /*Estilos de la pagina de productos*/
+.mainDeProductos h1 {
+  text-align: center;
+  font-style: oblique;
+  text-decoration: underline; }
+
+.mainDeProductos h2 {
+  text-align: center; }
+
 .mainDeProductos section {
   margin-top: 10px;
   border-top: #afc2cb 2px groove; }
   .mainDeProductos section div article {
-    background-color: #e1f5fe;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 5px black;
-    transition: all 1s; }
+    transition: all 0.4s;
+    cursor: pointer; }
+
+.tituloLibro {
+  margin-top: 5%; }
+
+.imagenProducto {
+  box-shadow: 2px 2px 5px black; }
 
 .mainDeProductos section div article:hover {
-  transform: scale(1.05, 1.05); }
+  transform: scale(1.03); }
 
 /*Estilos para la pantalla de un celular*/
 @media only screen and (max-width: 759px) {
@@ -261,9 +282,13 @@ footer {
     width: 100%; } }
 
 /*Estilos para la pagina de novedades*/
+.mainNovedades h1 {
+  text-align: center;
+  font-style: oblique;
+  text-decoration: underline; }
+
 .listaNovedades div {
   background-color: #e1f5fe;
-  /*box-shadow: 2px 2px 5px black;*/
   width: 100%; }
 
 /*Estilos para la pantalla de un celular*/
@@ -305,6 +330,11 @@ footer {
 .nosotros ul {
   list-style-image: url("../media/marcador-de-posicion.png"); }
 
+.nosotros h1 {
+  text-align: center;
+  font-style: oblique;
+  text-decoration: underline; }
+
 .nosotros img {
   width: 100%; }
 
@@ -324,8 +354,8 @@ footer {
     font-size: 2.5vw; } }
 
 @media only screen and (min-width: 768px) {
-  .nosotros {
-    margin-top: 5%; }
+  .nosotros h1 {
+    margin-top: 4%; }
   .nosotros p {
     font-size: 2.25vw; }
   .nosotros ul li {
@@ -337,6 +367,11 @@ footer {
 
 .formulario textarea:focus {
   background-color: lightgray; }
+
+.mainContacto h1 {
+  text-align: center;
+  font-style: oblique;
+  text-decoration: underline; }
 
 .mainContacto .btn {
   background-color: #e1f5fe;

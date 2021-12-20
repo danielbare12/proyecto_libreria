@@ -3,12 +3,17 @@
 /*Estilos para la pagina de novedades*/
 
 
-.listaNovedades div{
-    background-color: $colorProductos;
-    /*box-shadow: 2px 2px 5px black;*/
-    width: 100%
+.mainNovedades h1{
+        text-align: center;
+        font-style: oblique;
+    text-decoration: underline;
+    
 }
 
+.listaNovedades div{
+        background-color: $colorProductos;
+        width: 100%;
+}
 
 /*Estilos para la pantalla de un celular*/
 @media only screen and (max-width:759px){

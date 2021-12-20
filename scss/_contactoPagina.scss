@@ -10,10 +10,18 @@
     background-color: lightgray;
 }
 
-.mainContacto .btn{
+.mainContacto {
+    h1{
+        text-align: center;
+        font-style: oblique;
+        text-decoration: underline;
+        
+    }
+    .btn{
     background-color: $colorProductos;
     border: $colorPrincipal;
     color: black;
+    }
 }
 
 @media only screen and (max-width:767px){

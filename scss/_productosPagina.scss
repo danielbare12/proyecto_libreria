@@ -3,24 +3,38 @@
 /*Estilos de la pagina de productos*/
 
 .mainDeProductos{
+    h1{
+        text-align: center;
+        font-style: oblique;
+    text-decoration: underline;
+    }
+    h2{
+        text-align: center;
+    }
     section{
         margin-top: 10px;
         border-top: $colorSecundario 2px groove;   
         div article{
-            background-color: $colorProductos;
             margin-right: 20px;
             margin-left: 20px;
             margin-bottom: 10px;
-            box-shadow: 2px 2px 5px black;
-            transition: all 1s;          
+            transition: all 0.4s;
+            cursor: pointer;         
         }    
     }
     
 }
 
+.tituloLibro{
+    margin-top: 5%;
+}
+
+.imagenProducto{
+    box-shadow: 2px 2px 5px black;
+}
 
 .mainDeProductos section div article:hover{
-    transform: scale(1.05,1.05);
+    transform: scale(1.03);
 }
 
 
