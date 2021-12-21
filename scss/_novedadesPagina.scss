@@ -13,7 +13,10 @@
 .listaNovedades div{
         background-color: $colorProductos;
         width: 100%;
+        cursor: pointer;
 }
+
+
 
 /*Estilos para la pantalla de un celular*/
 @media only screen and (max-width:759px){

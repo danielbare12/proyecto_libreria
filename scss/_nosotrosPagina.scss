@@ -2,27 +2,26 @@
 
 /*Estilos para la pagina nosotros*/
 
-.nosotros .row{
-    line-height: 2;
-    
-    margin-bottom: 25px;
+.nosotros{
+    .row{
+        line-height: 2;
+        margin-bottom: 25px;
+    }
+
+    ul{
+        list-style-image: url("../media/marcador-de-posicion.png");
+    }
+    h1{
+        text-align: center;
+        font-style: oblique;
+        text-decoration: underline;
+    }
+    img{
+        width: 100%;
+        
+    }
 }
 
-.nosotros ul{
-    list-style-image: url("../media/marcador-de-posicion.png");
-}
-
-.nosotros h1{
-    text-align: center;
-    font-style: oblique;
-    text-decoration: underline;
-}
-
-
-.nosotros img{
-    width: 100%;
-    
-}
 
 .bloqueTexto{
     background-color: $colorProductos;
@@ -36,7 +35,7 @@
     
 }
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:759px){
     .nosotros p{
         font-size: 2.5vw;
     }
@@ -46,7 +45,7 @@
     }
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:760px){
 
     .nosotros h1{
         margin-top: 4%;
