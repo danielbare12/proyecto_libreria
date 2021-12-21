@@ -58,6 +58,7 @@ body {
     .navbar-collapse a {
       font-weight: bold; } }
 
+/*----------Imports del index---------*/
 /*Pie de pagina*/
 footer {
   background-color: #afc2cb;
@@ -234,6 +235,7 @@ footer {
     width: 180px;
     height: 280px; } }
 
+/*----------Estilos de la pagina de los productos---------*/
 /*Estilos de la pagina de productos*/
 .mainDeProductos h1 {
   text-align: center;
@@ -294,6 +296,7 @@ footer {
   .imagenProducto {
     width: 100%; } }
 
+/*----------Estilos de la pagina de los Novedades---------*/
 /*Estilos para la pagina de novedades*/
 .mainNovedades h1 {
   text-align: center;
@@ -336,6 +339,7 @@ footer {
   .imagenNovedades {
     width: 100%; } }
 
+/*----------Estilos de la pagina de nosotros---------*/
 /*Estilos para la pagina nosotros*/
 .nosotros .row {
   line-height: 2;
@@ -375,6 +379,7 @@ footer {
   .nosotros ul li {
     font-size: 2.25vw; } }
 
+/*----------Estilos de la pagina de contacto---------*/
 /*Estilos para la pagina contacto*/
 .formulario input:focus {
   background-color: lightgray; }

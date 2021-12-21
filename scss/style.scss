@@ -102,16 +102,25 @@ body {
 
 }
 
+/*----------Imports del index---------*/
+
 @import "footerEstilos";
 
 @import "novedadesIndex";
 
 @import "productosIndex";
 
+/*----------Estilos de la pagina de los productos---------*/
+
 @import "productosPagina";
+/*----------Estilos de la pagina de los Novedades---------*/
 
 @import "novedadesPagina";
 
+/*----------Estilos de la pagina de nosotros---------*/
+
 @import "nosotrosPagina";
+
+/*----------Estilos de la pagina de contacto---------*/
 
 @import "contactoPagina";
