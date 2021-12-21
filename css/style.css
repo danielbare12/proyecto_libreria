@@ -43,7 +43,10 @@ body {
   main {
     margin-top: 1%;
     margin-left: 10px;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  .navbar-nav {
+    text-align: right;
+    font-weight: bold; } }
 
 /*Estilos para la pantalla de una Desktop*/
 @media only screen and (min-width: 1024px) {
