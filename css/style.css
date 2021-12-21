@@ -28,7 +28,10 @@ body {
     width: 80px;
     height: 130px; }
   main {
-    margin: 2%; } }
+    margin: 2%; }
+  .navbar-nav {
+    text-align: right;
+    font-weight: bold; } }
 
 /*Estilos para la pantalla de una tablet*/
 @media only screen and (min-width: 760px) and (max-width: 1023px) {
@@ -395,7 +398,7 @@ footer {
     font-style: oblique;
     text-decoration: underline; }
   .mainContacto .btn {
-    background-color: #e1f5fe;
+    background-color: #afc2cb;
     border: #ffffff;
     color: black; }
 
